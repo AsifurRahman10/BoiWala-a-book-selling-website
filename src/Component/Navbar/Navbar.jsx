@@ -40,16 +40,16 @@ export const Navbar = () => {
             {link}
           </ul>
         </div>
-        <a className="text-3xl font-bold">Boi-Wala</a>
+        <a className="md:text-3xl font-bold">Boi-Wala</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-xl">{link}</ul>
       </div>
-      <div className="navbar-end gap-6 ">
-        <button className="btn px-8 bg-[#23BE0A] text-white text-lg">
+      <div className="navbar-end gap-2 md:gap-6 ">
+        <button className="btn md:px-8 bg-[#23BE0A] text-white text-lg">
           Sign Up
         </button>
-        <button className="btn px-8 bg-[#59C6D2] text-white text-lg">
+        <button className="btn md:px-8 bg-[#59C6D2] text-white text-lg">
           Sign In
         </button>
       </div>
