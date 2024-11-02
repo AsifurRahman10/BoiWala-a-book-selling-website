@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { setWishListData, setDataToLS } from "../../Utility/HandleDb";
 
 export const BookDetails = () => {
   const { bookId } = useParams();
@@ -18,6 +19,13 @@ export const BookDetails = () => {
     review,
     totalPages,
   } = book;
+
+  const handleMarkAsRead = (id) => {
+    setDataToLS(id);
+  };
+  const handleWishlist = (id) => {
+    setWishListData(id);
+  };
   return (
     <div className="flex flex-col lg:flex-row my-10 gap-4">
       <div className="flex-1">
@@ -68,10 +76,16 @@ export const BookDetails = () => {
           </div>
         </div>
         <div className="flex gap-6">
-          <button className="bg-transparent btn border-2 hover:bg-[#50B1C9] px-8">
-            Read
+          <button
+            onClick={() => handleMarkAsRead(id)}
+            className="bg-transparent btn border-2 hover:bg-[#50B1C9] px-8"
+          >
+            Mark as Read
           </button>
-          <button className="bg-transparent btn border-2 hover:bg-[#50B1C9] px-8">
+          <button
+            onClick={() => handleWishlist(id)}
+            className="bg-transparent btn border-2 hover:bg-[#50B1C9] px-8"
+          >
             Wishlist
           </button>
         </div>

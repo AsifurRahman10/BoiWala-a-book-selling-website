@@ -9,7 +9,7 @@ export const Books = () => {
       .then((data) => setDisplayBooks(data));
   }, []);
   return (
-    <div>
+    <div className="my-10">
       <div className="text-center">
         <h2 className="text-4xl font-bold">Books</h2>
       </div>
