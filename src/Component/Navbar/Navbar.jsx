@@ -11,7 +11,7 @@ export const Navbar = () => {
       <NavLink className="ml-5" to="/listedBooks">
         Listed Books
       </NavLink>
-      <NavLink className="ml-5" to="/error">
+      <NavLink className="ml-5" to="/pagesToRead">
         Pages to Read
       </NavLink>
     </>

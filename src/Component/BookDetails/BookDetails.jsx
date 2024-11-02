@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { setWishListData, setDataToLS } from "../../Utility/HandleDb";
+import { toast } from "react-toastify";
 
 export const BookDetails = () => {
   const { bookId } = useParams();

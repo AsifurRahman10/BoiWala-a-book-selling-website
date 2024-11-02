@@ -1,8 +1,21 @@
-# React + Vite
+# 📚 Bookwala
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Bookwala** is a React-based web app for book lovers to explore a variety of books, track their reading journey, and manage a wishlist.
 
-Currently, two official plugins are available:
+## 🌟 Live Link : https://boiwalaereader.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
+
+- **Explore Books** – Browse a selection of books with detailed info.
+- **Mark as Read** – Keep track of books you’ve completed.
+- **Wishlist** – Save books you plan to read in the future.
+- **Progress Chart** – Visualize your reading progress based on pages read.
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **React Toastify**
+- **React Router**
+- **Daisy UI**
+- **React Tabs**

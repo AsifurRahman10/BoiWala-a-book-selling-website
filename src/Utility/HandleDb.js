@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 export const getStoredData = () => {
     const storedDataStr = localStorage.getItem('read-list');
     if (storedDataStr) {
@@ -12,12 +14,13 @@ export const getStoredData = () => {
 export const setDataToLS = (id) => {
     const data = getStoredData();
     if (data.includes(id)) {
-        console.log('hello');
+        toast('already marked as read');
     }
     else {
         data.push(id);
         const idStr = JSON.stringify(data);
         localStorage.setItem('read-list', idStr)
+        toast('Added mark as read');
     }
 }
 
@@ -35,12 +38,13 @@ export const getWishLstStoreData = () => {
 export const setWishListData = (id) => {
     const data = getWishLstStoreData();
     if (data.includes(id)) {
-        return alert('already available in wishlist');
+        toast('already available in wishlist');
     }
     else {
         data.push(id);
         const dataStr = JSON.stringify(data);
         localStorage.setItem('wish-list', dataStr);
+        toast('Added as Wishlist');
     }
 }
 
